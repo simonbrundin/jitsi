@@ -8,12 +8,12 @@ spec:
     - name: simons-gateway
       namespace: envoy
   hostnames:
-    - "jitse.simonbrundin.com"
+    - "jitsi.simonbrundin.com"
   rules:
     - backendRefs:
         - group: ""
           kind: Service
-          name: plan-service
+          name: jitsi-meet-web
           port: 80
           weight: 1
           namespace: jitsi
